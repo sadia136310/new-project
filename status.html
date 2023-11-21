@@ -11,8 +11,8 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-    <!-- fontawesome icon -->
-    <script src="https://kit.fontawesome.com/52efe56efd.js" crossorigin="anonymous"></script>
+  <!-- fontawesome icon -->
+  <script src="https://kit.fontawesome.com/52efe56efd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="order.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-muted" href="profile.html">Profile</a>
@@ -71,11 +71,11 @@
       </div>
       <div>
 
-            <div class="text-center">
+        <div class="text-center">
           <button class="m-4 py-3 px-3 rounded bg-primary border-none">
 
             <i class="fa-solid fa-plus bg-white rounded-circle text-primary p-1"></i>
-         <br>
+            <br>
             <a href="order.html" class="text-white">New Order</a>
           </button>
         </div>
@@ -118,7 +118,7 @@
               <th scope="col">Status</th>
 
             </tr>
-            
+
           </thead>
           <tbody>
 
@@ -135,40 +135,20 @@
                 aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">order #34563</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="d-flex p-2">
+                      <div class=" border px-2 bg-primary rounded">
+                        <i class="fa-solid fa-backward text-white"></i>
+                      </div>
+                      <h5 class="modal-title ps-4" id="exampleModalLabel">order #34563</h5>
+                    
                     </div>
-
+                    <hr>
 
                     <div class="modal-body">
 
                       <div>
-                        <button type="button" class="btn btn-light py-2 border-primary">Customer Information</button>
-
-
-                        <!-- <button type="button" class="btn btn-light py-2">Status</button> -->
-
-                        <button type="button" class="btn btn-light py-2" data-bs-toggle="modal"
-                          data-bs-target="#exampleModal">
-                          Status
-                        </button>
-
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                          aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-
-                              <div class="modal-body">
-
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
-
+                        <button type="button" class="btn btn-light py-2">Customer Information</button>
+                        <button type="button" class="btn btn-light py-2 border-primary">Status</button>
 
 
                         <button type="button" class="btn btn-light py-2">Details</button>
@@ -176,21 +156,28 @@
                       </div>
 
 
-                      <div class="container-fluid bg-light my-3 rounded">
-                        <div class="row">
-                          <div class="col-md-6">
+                      <div class="container-fluid bg-light my-3  rounded">
+                        <div class="row py-3 rounded">
+                          <div class="col-md-5">
 
-                            <label for="validationDefault01" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Sajid Ahmed"
-                              required>
+                            <h6>Pick Up Date</h6>
+                            <h6>Pick Up Address</h6>
+                            <h6 class="pt-3">Drop Off date</h6>
+                            <h6>Drop Off Address</h6>
+
                           </div>
-                          <div class="col-md-6 ms-auto">
-                            <label for="validationDefault02" class="form-label">Mobile
-                            </label>
-                            <input type="text" class="form-control text-muted" id="validationDefault02" value="+97 8239"
-                              required>
+                          <div class="col-md-7">
+                            <h6 class="text-muted"><small>10 Sep 23 2.00 PM</small></h6>
+                            <h6 class="text-muted"><small>Dubai Outlet mall route 66 - al ain</small></h6>
+                            <h6 class="text-muted pt-3"><small>15 Sep 23</small></h6>
+                            <h6 class="text-muted"><small>Dubai Outlet mall route 66 - al ain</small></h6>
+
+
+
                           </div>
                         </div>
+                        <hr>
+
                         <div class="row">
                           <div class="col-md-6 ms-auto">
 
@@ -203,17 +190,6 @@
                             <label for="validationDefault02" class="form-label">Address</label>
                             <input type="text" class="form-control text-muted" id="validationDefault02"
                               value="Sajid Ahmed" required>
-                          </div>
-                        </div>
-
-
-                        <div class="row">
-                          <div class="col-md-12 pb-5">
-
-                            <label for="exampleFormControlTextarea1" class="form-label">Remarks</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                      </textarea>
-
                           </div>
                         </div>
                       </div>
@@ -227,81 +203,14 @@
               <td> <button type="button" class="btn btn-success mx-auto">Done</button></td>
             </tr>
 
-            <tr>            
+            <tr>
               <!-- Button trigger modal -->
 
               <td type="" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 #34563
               </td>
 
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">order #34563</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-
-                    <div class="modal-body">
-
-                      <div>
-                        <a type="button" class="btn btn-light py-2 border-primary">Customer Information</a>
-                        <button type="button" class="btn btn-light py-2">Status</button>
-                        <button type="button" class="btn btn-light py-2">Details</button>
-                        <button type="button" class="btn btn-light py-2">Payments</button>
-                      </div>
-
-
-                      <div class="container-fluid bg-light my-3 rounded">
-                        <div class="row">
-                          <div class="col-md-6">
-
-                            <label for="validationDefault01" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Sajid Ahmed"
-                              required>
-                          </div>
-                          <div class="col-md-6 ms-auto">
-                            <label for="validationDefault02" class="form-label">Mobile
-                            </label>
-                            <input type="text" class="form-control text-muted" id="validationDefault02" value="+97 8239"
-                              required>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6 ms-auto">
-
-
-                            <label for="validationDefault01" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Sajid Ahmed"
-                              required>
-                          </div>
-                          <div class="col-md-6 ms-auto">
-                            <label for="validationDefault02" class="form-label">Address</label>
-                            <input type="text" class="form-control text-muted" id="validationDefault02"
-                              value="Sajid Ahmed" required>
-                          </div>
-                        </div>
-
-
-                        <div class="row">
-                          <div class="col-md-12 pb-5">
-
-                            <label for="exampleFormControlTextarea1" class="form-label">Remarks</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                      </textarea>
-
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
+              
               <td>October 22, 2023</td>
               <td><button type="button" class="btn btn-secondary mx-auto">Pending</button></td>
             </tr>
@@ -313,76 +222,7 @@
               <td type="" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 #34563
               </td>
-
-
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">order #34563</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-
-                    <div class="modal-body">
-
-                      <div>
-                        <a type="button" class="btn btn-light py-2 border-primary">Customer Information</a>
-                        <button type="button" class="btn btn-light py-2">Status</button>
-                        <button type="button" class="btn btn-light py-2">Details</button>
-                        <button type="button" class="btn btn-light py-2">Payments</button>
-                      </div>
-
-
-                      <div class="container-fluid bg-light my-3 rounded">
-                        <div class="row">
-                          <div class="col-md-6">
-
-                            <label for="validationDefault01" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Sajid Ahmed"
-                              required>
-                          </div>
-                          <div class="col-md-6 ms-auto">
-                            <label for="validationDefault02" class="form-label">Mobile
-                            </label>
-                            <input type="text" class="form-control text-muted" id="validationDefault02" value="+97 8239"
-                              required>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6 ms-auto">
-
-
-                            <label for="validationDefault01" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Sajid Ahmed"
-                              required>
-                          </div>
-                          <div class="col-md-6 ms-auto">
-                            <label for="validationDefault02" class="form-label">Address</label>
-                            <input type="text" class="form-control text-muted" id="validationDefault02"
-                              value="Sajid Ahmed" required>
-                          </div>
-                        </div>
-
-
-                        <div class="row">
-                          <div class="col-md-12 pb-5">
-
-                            <label for="exampleFormControlTextarea1" class="form-label">Remarks</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                      </textarea>
-
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
+             
               <td>October 22, 2023</td>
               <td> <button type="button" class="btn btn-info text-white">Processing</button></td>
             </tr>
@@ -396,80 +236,17 @@
               </td>
 
 
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">order #34563</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-
-                    <div class="modal-body">
-
-                      <div>
-                        <a type="button" class="btn btn-light py-2 border-primary">Customer Information</a>
-                        <button type="button" class="btn btn-light py-2">Status</button>
-                        <button type="button" class="btn btn-light py-2">Details</button>
-                        <button type="button" class="btn btn-light py-2">Payments</button>
-                      </div>
-
-
-                      <div class="container-fluid bg-light my-3 rounded">
-                        <div class="row">
-                          <div class="col-md-6">
-
-                            <label for="validationDefault01" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Sajid Ahmed"
-                              required>
-                          </div>
-                          <div class="col-md-6 ms-auto">
-                            <label for="validationDefault02" class="form-label">Mobile
-                            </label>
-                            <input type="text" class="form-control text-muted" id="validationDefault02" value="+97 8239"
-                              required>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6 ms-auto">
-
-
-                            <label for="validationDefault01" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="validationDefault01" value="Sajid Ahmed"
-                              required>
-                          </div>
-                          <div class="col-md-6 ms-auto">
-                            <label for="validationDefault02" class="form-label">Address</label>
-                            <input type="text" class="form-control text-muted" id="validationDefault02"
-                              value="Sajid Ahmed" required>
-                          </div>
-                        </div>
-
-
-                        <div class="row">
-                          <div class="col-md-12 pb-5">
-
-                            <label for="exampleFormControlTextarea1" class="form-label">Remarks</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text 
-                      </textarea>
-
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
+              
               <td>October 22, 2023</td>
               <td> <button type="button" class="btn btn-success">Done</button></td>
             </tr>
 
+
           </tbody>
         </table>
+
+
+
         <div class="text-center mt-5">
           <button class="py-2 px-4 rounded text-muted"><i class="fa-solid fa-arrow-left"></i> Previous Page</button>
           <button class="py-2 px-4 rounded btn-primary">Next Page <i class="fa-solid fa-arrow-right"></i></button>
